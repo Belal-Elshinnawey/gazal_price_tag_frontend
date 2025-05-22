@@ -170,18 +170,18 @@
 
     @font-face {
       font-family: "Custombold";
-      src: url("https://sea-turtle-app-jlma3.ondigitalocean.app/mun/assets/Fonts/font.otf") format("opentype");
+      src: url("https://localhost:9000/mun/font.otf") format("opentype");
     }
 
     @font-face {
       font-family: "CustomSemibold";
-      src: url("https://sea-turtle-app-jlma3.ondigitalocean.app/mun/assets/Fonts/semibold.otf") format("opentype");
+      src: url("https://localhost:9000/mun/semibold.otf") format("opentype");
     }
   </style>
 </head>
 
 <body onclick="focusInput()">
-  <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/mun/assets/corner-logo.png" alt="Logo" class="corner-logo" />
+  <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/mun/corner-logo.png" alt="Logo" class="corner-logo" />
 
 
   <div class="title">
@@ -263,7 +263,7 @@
       if(valid && decoded && json_results.valid && json_results.value){
         const json = json_results.value;
         console.log(json)
-        fetch("http://127.0.0.1:8000/wifi_set.php", {
+        fetch("http://127.0.0.1:9000/wifi_set.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -331,7 +331,7 @@
                 <div class="product-name-en">${name_en}</div></div>
                 <div class="prices"><div class="price-container"><div class="product-price">${price
                 }</div><div class="currency">
-            <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/${branches.branch2}/assets/sar.png" alt="sar" style="width: 25px; height: 25px;" />
+            <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/${branches.branch2}/sar.png" alt="sar" style="width: 25px; height: 25px;" />
           </div></div>`;
         }
 
@@ -349,7 +349,7 @@
               <div class="price-container">
                 <div class="product-price">${direct_discount}</div>
                 <div class="currency">
-                  <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/${branches.branch2}/assets/sar.png" alt="sar" style="width: 30px; height: 30px;" />
+                  <img src="https://sea-turtle-app-jlma3.ondigitalocean.app/${branches.branch2}/sar.png" alt="sar" style="width: 30px; height: 30px;" />
                 </div>
               </div>
             </div>`;
